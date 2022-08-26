@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/prefer-screen-queries */
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import React, { useState } from "react";
 import Counter from "./Counter";
@@ -26,7 +27,6 @@ describe("This is the browser testing", () => {
     
 
     fireEvent.click(screen.getByText(/Click/i));
-    // eslint-disable-next-line testing-library/prefer-screen-queries
     expect(getByTestId('valuess')).toHaveTextContent("1");
   });
 });
