@@ -6,7 +6,7 @@ export default function Counter() {
     setCount(count + 1);
   };
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px" }} data-testid="ClickIndicator">
       <button
         style={{
           paddingLeft: "10px",
@@ -16,8 +16,11 @@ export default function Counter() {
         }}
         onClick={() => handleClick()}
       >
-        Click {count}
+        Click
       </button>
+      <div className="valuess" data-testid="valuess" style={{ padding: "20px" }}>
+        {count}
+      </div>
     </div>
   );
 }
