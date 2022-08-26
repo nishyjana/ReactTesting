@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`This is the browser testing Snapshot test for the counter 1`] = `
+<DocumentFragment>
+  <button>
+    Click
+  </button>
+</DocumentFragment>
+`;
