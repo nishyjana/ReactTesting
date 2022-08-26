@@ -7,7 +7,17 @@ export default function Counter() {
   };
   return (
     <div style={{ padding: "20px" }}>
-      <button onClick={() => handleClick()}>Click {count}</button>
+      <button
+        style={{
+          paddingLeft: "10px",
+          paddingRight: "10px",
+          paddingTop: "5px",
+          paddingBottom: "5px",
+        }}
+        onClick={() => handleClick()}
+      >
+        Click {count}
+      </button>
     </div>
   );
 }
